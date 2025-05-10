@@ -1,0 +1,28 @@
+.contact-img{
+    background: url('contactUs-bg.jpg');
+    height: 550px;
+    width: auto;
+    color: rgba(7, 33, 149, 0.919);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .contact-img {
+    color: rgba(7, 144, 149, 0.919);
+    width: auto;
+  }
+}
+
+.contact-container{
+    display: flex;
+    width: auto;
+}
+
+.contact-details{
+    border-radius: 50px 0px 50px 0px ;
+    background-color: rgb(46, 155, 218);
+    text-align: justify;
+    color: aliceblue;
+}
