@@ -1,12 +1,17 @@
-import React from "react";
+import { Welcomevideo } from "./components/Welcomevideo";
+import { Intropara } from "./components/Intropara";
+import { Container } from 'react-bootstrap';
+import { CardSlider } from "./components/Cardslider";
 
 function Home() {
     return (
-        <div>
-            <div>
-                <h1 className="text-center"> Welcome to IOAH Mumbai</h1>
-            </div>
-        </div>
+        <>
+            <Welcomevideo />
+            <Container fluid className="my-2 px-3 intro">
+                <Intropara />
+            </Container>
+            <CardSlider/>
+        </>
     );
 }
 
