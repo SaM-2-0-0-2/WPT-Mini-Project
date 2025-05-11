@@ -76,6 +76,19 @@ app.post("/login", (request, response) => {
 });
 
 
+//Contact Us Query Form
+app.post("/query",(request, response)=>{
+    const { fname, email, subject, query } = request.body;
+    db.query("INSERT INTO queries (fname, email, subject, query) VALUES (?,?,?,?)", [fname, email, subject, query], (err) => {
+        console.log(fname, email, subject, query)
+        if(!err){
+            response.status(200).send({ message: "Response sent successfully"});
+        } else {
+            response.status(500).send({message: "Internal Server Error"});
+        }
+    })
+});
+
 // SERVER START
 app.listen(3000, (err) => {
     if (err) {

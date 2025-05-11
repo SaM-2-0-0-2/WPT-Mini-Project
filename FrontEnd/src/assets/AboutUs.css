@@ -1,0 +1,74 @@
+/* Text and Image Animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.0s ease-out, transform 1.0s ease-out, color 0.5s;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.header-section h1 {
+  color: #ff6f61;
+  transition: color 1s ease;
+}
+
+.header-section.fade-in h1 {
+  color: #ffffff;
+}
+
+.zoom-image {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zoom-image.fade-in {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.header-section h1 {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 5s ease;
+}
+
+.header-section.fade-in h1 {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* AboutUs.css */
+.main-paragraph {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.objectives-list li {
+  margin-bottom: 30px; /* Increased padding between list items */
+}
+
+.zoom-image.fade-in {
+  opacity: 1 !important;
+  
+}
+
+.zoom-image {
+  opacity: 0;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.objectives-image {
+  max-width: 90%; /* Control the image width */
+  height: auto;   /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+

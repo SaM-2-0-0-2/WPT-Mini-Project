@@ -20,7 +20,7 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary ps-3 pe-3" style={{ opacity: 0.9 }}>
-            <Link className="navbar-brand" to="/">IOAH Mumbai</Link>
+            <Link className="navbar-brand" to="/home">IOAH Mumbai</Link>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -46,8 +46,8 @@ function Navbar() {
                             About
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><Link className="dropdown-item" to="/about">About IOAH</Link></li>
-                            <li><Link className="dropdown-item" to="/team">Our Team</Link></li>
+                            <li><Link className="dropdown-item" to="/aboutUs">About IOAH</Link></li>
+                            <li><Link className="dropdown-item" to="/ourTeam">Our Team</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">
