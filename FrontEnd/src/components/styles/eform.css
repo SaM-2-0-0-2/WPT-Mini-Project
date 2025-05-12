@@ -1,0 +1,19 @@
+.body{
+  background: linear-gradient(90deg,rgb(55, 215, 97), rgb(144, 243, 164),  rgb(166, 232, 180));
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.button{
+    border: none;
+    border-radius: 25px;
+    background-color: #1df700;
+}
+
+.button:hover{
+    outline: none;
+    border: 1px solid white;
+    background-color: greenyellow;
+    color: black;
+}
+

@@ -21,8 +21,8 @@ function Login() {
                 if (message === "Login successful" && token) {
                     // Save to localStorage
                     localStorage.setItem("token", token);
-                    setFname(fname);         // Save fname
-                    setEmail(email);         // Save email
+                    setFname(fname); 
+                    setEmail(email); 
                     navigate("/home");
                 } else {
                     showErrorModal();

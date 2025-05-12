@@ -15,7 +15,7 @@ const Footer = () => {
     );
 
     return (
-        <footer className="bg-primary text-white py-4 mt-5 position-relative">
+        <footer className="bg-primary text-white py-4 position-relative">
             <Container>
                 <Row>
                     <Col md={6}>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
 
 const peopleData = {
   president: {
