@@ -3,6 +3,7 @@ import { Intropara } from "./components/Intropara";
 import { Container } from 'react-bootstrap';
 import { CardSlider } from "./components/Cardslider";
 
+
 function Home() {
     return (
         <>

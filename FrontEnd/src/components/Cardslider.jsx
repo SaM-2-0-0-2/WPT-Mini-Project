@@ -45,7 +45,7 @@ export function CardSlider() {
             <Card className="custom-card">
               <Card.Img variant="top" src={card.image} className="custom-card-img" />
               <Card.Body>
-                <Card.Title>{card.title}</Card.Title>
+                <Card.Title className='custom-card-text'>{card.title}</Card.Title>
                 <Card.Text>{card.text}</Card.Text>
               </Card.Body>
             </Card>
