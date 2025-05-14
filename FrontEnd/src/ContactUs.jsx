@@ -188,7 +188,7 @@ function ContactUs() {
                                     <div className={`tooltip-wrapper ${!isLoggedIn ? "tooltip-active" : ""}`} data-tooltip="Please log in to submit your query.">
                                         <button
                                             type="submit"
-                                            className="button btn btn-light px-4"
+                                            className="button4 btn btn-light px-4"
                                             disabled={!isLoggedIn}
                                         >Submit</button>
                                     </div>

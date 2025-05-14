@@ -35,7 +35,7 @@ const EventCard = () => {
             textAlign: 'center',
           }}
         >
-          📌 Upcoming Events
+          📌 All Events
         </h3>
 
         <Row xs={1} md={2} lg={3} className="g-4">

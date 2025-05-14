@@ -1,0 +1,101 @@
+.body2{
+    background: url(../../assets/sign-up-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 35px 0px 35px 0px;
+}
+
+.form-container{
+    background: rgba(0, 0, 0, 0.749);
+    backdrop-filter:  blur(5px);
+    border-radius: 20px;
+    color: rgba(104, 148, 229, 0.926);
+}
+
+.input1{
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgba(104, 148, 229, 0.926);
+    margin: 0px 5px 0px 5px;
+    color:rgba(104, 148, 229, 0.926)
+}
+
+.input1::placeholder{
+    color: rgba(104, 148, 229, 0.926);
+}
+
+.body3{
+    background: url(../../assets/Room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.signup-button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:rgba(153, 179, 227, 0.926);   
+}
+
+.signup-button:hover{
+    outline: none;
+    background-color: rgba(5, 41, 113, 0.674);
+    color: aliceblue;
+    transition-duration: 0.2s;
+}
+
+.login-button{
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    background-color:rgba(153, 179, 227, 0.926); 
+}
+
+.login-button:hover{
+    outline: none;
+    background-color: rgba(5, 41, 113, 0.674);
+    color: aliceblue;
+    transition-duration: 0.2s;
+}
+
+.login-text{
+    text-decoration: none;
+    color:rgba(104, 148, 229, 0.926);
+}
+
+.para1{
+    color:aliceblue;   
+}
+
+.login-text:hover{
+    text-decoration: underline;
+}
+
+.tooltip-error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.tooltip-error::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #fff3cd transparent;
+}
