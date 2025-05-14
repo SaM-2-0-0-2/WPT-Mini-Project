@@ -5,7 +5,7 @@ import Login from './Login';
 import Navbar from "./Navbar";
 import Home from "./Home";
 import AboutUs from './About_Us';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation,Navigate } from 'react-router-dom';
 import ContactUs from './ContactUs';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
@@ -33,6 +33,7 @@ function AppLayout() {
     <>
       {!hideNavbar && <Navbar />}
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/register" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />

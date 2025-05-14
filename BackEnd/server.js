@@ -145,8 +145,7 @@ app.get("/geteventdetails", (req, res) => {
     })
 });
 
-/*
-UPDATE EVENT
+//UPDATE EVENT
 app.put("/updateevent", verifyToken, (req, res) => {
     let qry = `update event set link="${req.body.link}", eventname="${req.body.eventname}", venue="${req.body.venue}", eventdatetime="${req.body.eventdatetime}", hostname="${req.body.hostname}" where eventid=${req.body.eventid};`;
     console.log(`FORMED QUERY: ${qry}`);
@@ -160,8 +159,8 @@ app.put("/updateevent", verifyToken, (req, res) => {
     })
 });
 
-DELETE EVENT
-app.delete("/deleteevent/:id", verifyToken , (req, res) => {
+//DELETE EVENT
+app.delete("/deleteevent/:id", (req, res) => {
     let qry = `delete from event where eventid=${req.params.id};`;
     console.log(`FORMED QUERY: ${qry}`);
     db.query(qry, (error, result) => {
@@ -174,7 +173,7 @@ app.delete("/deleteevent/:id", verifyToken , (req, res) => {
 
     })
 });
-*/
+
 
 // SERVER START
 app.listen(3000, (err) => {

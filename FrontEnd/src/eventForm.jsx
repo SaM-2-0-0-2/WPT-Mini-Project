@@ -6,13 +6,12 @@ import './components/styles/eform.css';
 import AdminNavbar from './AdminNavBar';
 
 const EventForm = () => {
-  const fname = getAdminName();
   const [formData, setFormData] = useState({
     eventname: '',
     venue: '',
     eventdatetime: '',
     link: '',
-    hostname: fname,
+    hostname: '',
   });
 
   const handleChange = (e) => {
@@ -34,7 +33,7 @@ const EventForm = () => {
         venue: '',
         eventdatetime: '',
         link: '',
-        hostname: fname  // Preserve the hostname
+        hostname: ''  // Preserve the hostname
       });
     })
     .catch((error) => {
@@ -115,7 +114,6 @@ const EventForm = () => {
                 value={formData.hostname}
                 onChange={handleChange}
                 required
-                readOnly
               />
             </Form.Group>
 
